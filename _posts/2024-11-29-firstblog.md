@@ -44,7 +44,7 @@ deferred.reject();
 ### Step 2: The Messagebox
 
 This is the simple part, you create a message box component that suits your own taste. Here is mine using shadcn:
-```typescript
+```tsx
 import {
     Dialog,
     DialogContent,
@@ -53,7 +53,7 @@ import {
     DialogFooter,
 } from "@/components/ui/dialog";
 
-type YesNoBoxProps = {
+interface YesNoBoxProps {
     title: string;
     message: string;
     open: boolean;
