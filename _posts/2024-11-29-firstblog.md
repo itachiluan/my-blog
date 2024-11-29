@@ -320,6 +320,7 @@ export const MessageBoxProvider = ({children}: {children: React.ReactNode}) => {
     };
 
     return (
+        {/* Github blog got this weird, if the value doen't show, it should be "value=\{\{ askToConfirm \}\}" */}
         <DialogContext.Provider value={{ askToConfirm }}>
             {children}
             <YesNoBox
@@ -342,4 +343,4 @@ export const useYesNoDialog = () => {
 }
 ```
 
-Happy coding! I hope you find this article helpful. If you have any questions or suggestions, feel free to leave a comment below.
+Happy coding! I hope you find this article helpful.
