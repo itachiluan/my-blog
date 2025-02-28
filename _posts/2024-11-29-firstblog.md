@@ -136,7 +136,7 @@ export const MessageBoxProvider = ({children}: {children: React.ReactNode}) => {
 
     return (
         {/* Github blog got this weird, if the value doen't show, it should be "value=\{\{ askToConfirm \}\}" */}
-        <MessageBoxContext.Provider value={{ askToConfirm }}>
+{% raw %}<MessageBoxContext.Provider value={{ askToConfirm }}>{/% endraw %}
             {children}
             <YesNoBox
                 title={title}
