@@ -134,10 +134,9 @@ export const MessageBoxProvider = ({children}: {children: React.ReactNode}) => {
         return deferred.promise;
     };
 
-    {% raw %}
     return (
         {/* Github blog got this weird, if the value doen't show, it should be "value=\{\{ askToConfirm \}\}" */}
-        <MessageBoxContext.Provider value={{ askToConfirm }}>
+        <MessageBoxContext.Provider value={{ "{{" }} askToConfirm {{ "}}" }}>
             {children}
             <YesNoBox
                 title={title}
@@ -148,7 +147,6 @@ export const MessageBoxProvider = ({children}: {children: React.ReactNode}) => {
             />
         </MessageBoxContext.Provider>
     );
-    {% endraw %}
 }
 ```
 
