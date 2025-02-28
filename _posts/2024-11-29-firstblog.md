@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Elegant Messagebox Made Simple with React Hooks and Context API (Nextjs)"
 date: 2024-11-29
 ---
